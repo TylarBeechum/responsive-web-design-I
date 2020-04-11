@@ -1,3 +1,476 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*  Interface 2 css */
+
+.navbar{
+ display:flex;
+ justify-content:space-evenly;
+ 
+ 
+ 
+ 
+  
+
+
+	background-color:khaki;
+}
+  
+nav{
+	margin-right:80px;
+	font-size: 16px;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  padding-bottom:30px;
+  padding-top:30px;
+  
+}
+
+nav a{
+	color:gray;
+	line-height: 30px;
+	padding-right:40px;
+  padding-left:40px;
+ 
+ 
+}
+
+.logo_v2{
+
+}
+
+.centertop{
+	padding-top:70px;
+	padding-left:9%;
+}
+.inno{
+	display:inline-block;
+	text-align:center;
+	font-size:60px;
+	padding-left:30%;
+	padding-bottom:5%;
+	
+}
+
+button{
+	margin:10px;
+}
+
+.img{
+	display:inline-block;
+	padding-left:65px;
+}
+
+.middle-img_v1{
+ 
+}
+.m_img{
+ display:flex;
+ justify-content:center;
+
+}
+
+.Bottom-content{
+
+padding-top:20px;
+}
+
+.f_a{
+  display:flex;
+  justify-content:center;
+}
+
+.s_p_v{
+  display:flex;
+  justify-content:center;
+}
+.features{
+	display:inline-block;
+	width:450px;
+	margin-left:20px;
+	padding-bottom:40px;
+
+}
+
+.about{
+	display:inline-block;
+	width:450px;
+	padding-bottom: 40px;
+
+}
+
+.services_v1{
+display:inline-block;
+width: 300px;
+padding-left:20px;
+padding-top:20px;
+}
+
+.product{
+display:inline-block;
+width: 300px;
+padding-left:20px;
+padding-top:20px;
+}
+
+.vision{
+display:inline-block;
+width: 300px;
+padding-left:20px;
+padding-top:20px;
+padding-bottom:20px;
+
+}
+
+.a_s{
+  display:flex;
+  justify-content:center;
+  margin-right:38%;
+}
+address{
+
+padding-top:22px;
+
+}
+
+footer{
+	text-align:center;
+}
+
+/* Interface 2 css*/
+
+
+/* Interface 3 flexbox
+nav{
+	margin-right:80px;
+   font-size: 16px;
+   width: 100%;
+   
+   padding-bottom:30px;
+   display:flex;
+   justify-content:center;
+   background-color:khaki;
+   }
+
+   nav a{
+    color:gray;
+    line-height: 30px;
+    padding-right:40px;
+    padding-left:40px;
+  }
+  
+
+  .items{
+	 width:350px;
+	 border: 1px solid black;
+	 background-color:gainsboro;
+	margin-bottom:30px;
+ }
+ 
+ .flex-container{
+	 display:flex;
+  flex-flow:row wrap;
+  width: 800px;
+  justify-content: space-evenly;
+   margin: 0 auto;
+   padding-top:35px;
+ }
+
+ .items-p{
+   padding:20px;
+   
+ }
+
+#Head-pic{
+	display:flex;
+  justify-content:center;
+  padding-top:30px;
+}
+ 
+#Ser-pic{
+	display:flex;
+	justify-content:flex-end;
+}
+
+
+.services{
+	margin: 0 auto;
+  width:690px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.facts{
+  width:500px;
+  padding:20px;
+  
+}
+
+
+.facts_container{
+	display:flex;
+	justify-content:center;
+	padding:30px;
+	margin:20px;
+	
+}
+
+
+li{
+	padding-top:10px;
+	display: list-item;
+
+}
+
+button{
+	background-color:whitesmoke;
+	color:black;
+	padding: 10px 20px;
+	text-align:center;
+	border-radius:20px;
+	cursor: pointer;
+}
+
+footer{
+    padding-top:35px;
+}
+  */
+
+/* This is all media quiery CSS DO NOT TOUCH */
+
+@media (max-width:800px) {
+
+nav{
+  margin-right:20px;
+  padding-top:20px;
+}
+ 
+ 
+
+
+.logo_v2{
+ 
+}
+
+
+
+.navbar{
+  display:flex;
+  flex-wrap:wrap-reverse;
+  justify-content: center;
+
+  
+}
+
+.centertop{
+  display:flex;
+  margin-right:110px;
+}
+
+.img{
+  display:none;
+}
+
+.Bottom-content{
+
+}
+
+.f_a{
+  display:flex;
+  margin-left:18px;
+}
+
+.s_p_v{
+  display:flex;
+}
+
+.features{
+  width:420px;
+  padding-right:20px;
+}
+
+.about{
+  width:400px;
+}
+
+.middle-img_v1{
+  height:150px;
+  padding-left:25px;
+}
+
+.services_v1{
+  width:300px;
+  padding-left:25px;
+}
+
+.product{
+  padding-left:25px;
+}
+
+}
+    
+
+
+@media (max-width:500px) {
+    body{
+       
+       
+    }
+    
+     .logo_v2{
+      display:flex;
+      justify-content:center;
+      border-bottom: 1px solid ghostwhite;
+      padding-bottom:10px;
+      
+    }
+    nav{
+       display:flex;
+       flex-direction:column;
+       text-align: center;
+       
+    }
+
+    .navbar{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    nav a{
+        border-bottom: 1px solid ghostwhite;
+        padding:5px;
+    }
+    
+
+    .img{
+        display:none;
+        
+    }
+
+    .inno{
+       margin-right:30px;
+       
+    }
+
+    .centertop{
+       margin-right:60%;
+    }
+
+    .Bottom-content{
+       
+    }
+    .f_a{
+      display:flex;
+      flex-direction: column;
+      ;
+    }
+
+    .features{
+        padding-bottom:30px;
+        margin-left:10px;
+       
+    }
+
+    .about{
+      margin-left:10px;
+    }
+
+    .middle-img_v1{
+      height:95px;
+      padding-left:16px;
+    }
+
+    .services_v1{
+      width:450px;
+    }
+
+    .product{
+      width:450px;
+    }
+
+    .vision{
+      width:450px;
+    }
+    .s_p_v{
+      display:flex;
+      flex-direction:column;
+    }
+
+    .address_v1{
+     
+    }
+     
+    address{
+      padding-left:20px;
+    }
+}
+ /* Interface 3 flexbox*/
+ 
+ /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
