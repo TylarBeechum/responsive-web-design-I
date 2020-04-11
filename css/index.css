@@ -371,7 +371,9 @@ nav{
 .product{
   padding-left:25px;
 }
-
+address{
+  padding-right:60%;
+}
 }
     
 
@@ -466,7 +468,8 @@ nav{
     }
      
     address{
-      padding-left:20px;
+      padding-bottom:20px;
+      padding-right:40%;
     }
 }
  /* Interface 3 flexbox*/
